@@ -13,11 +13,11 @@
   <div id="app">
 
     <input type="text" v-model="mensaje" placeholder="cambia el titulo">
-    <h1>{{ mensaje }} prueva</h1>
+    <h1 :class="colorClass">{{ mensaje }} prueva</h1>
 
 
-    <button> click for change the color (red)</button>
-    <button>click for change the color (blue)</button>
+    <button @click="miaFunzione('red')"> click for change the color (red)</button>
+    <button @click="miaFunzione('blue')">click for change the color (blue)</button>
   </div>
 
 

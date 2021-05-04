@@ -3,7 +3,14 @@ const app = new Vue({
 
   el : "#app",
   data:{
-    mensaje: ""
+    mensaje: "",
+    colorClass : ""
+  },
+
+  methods:{
+    miaFunzione : function(color){
+      this.colorClass = color;
+    }
   }
 
 });
